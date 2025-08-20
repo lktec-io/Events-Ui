@@ -19,7 +19,7 @@ function Register() {
     }
 
     try {
-      await axios.post("http://localhost:7000/api/loged/register", {
+      await axios.post("http://185.194.216.14:7000/api/loged/register", {
         username,
         phone,
         email,
