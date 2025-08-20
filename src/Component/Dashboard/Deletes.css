@@ -1,0 +1,137 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,900;1,500;1,600&display=swap");
+
+:root{
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --accent:#16a34a;
+  --line:#e5e7eb;
+  --shadow: 0 10px 25px rgba(0,0,0,.06);
+  font-family: poppins;
+}
+
+*{ box-sizing: border-box; }
+
+.dashboard {
+  min-height: 100vh;
+  background: var(--bg);
+  padding: 32px 16px;
+  display: flex;
+  justify-content: center;
+}
+.dashboard-inner{
+  width: 100%;
+  max-width: 960px;
+}
+.hero {
+  display: flex;
+  align-items: left;
+  gap: 12px;
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+  padding: 14px 18px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  font-weight: 100;
+  font-size: 0.9em;
+}
+
+.panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.panel-header{
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+
+.panel-title{
+   font-size: 0.8em;
+  color: var(--text);
+}
+
+a{
+  text-decoration: none;
+  font-weight: 100;
+}
+.badge{
+  font-size: 0.6em;
+  padding: 5px 8px;
+  border-radius: 999px;
+  background:#eef2ff;
+  color:#4338ca;
+  border:1px solid #c7d2fe;
+  text-decoration: none;
+  font-style: none;
+}
+
+.panel-body{
+  padding: 8px 0;
+}
+
+.info-table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.info-table tr{
+
+  border-bottom: 1px solid var(--line);
+}
+
+.info-table tr:last-child{
+  border-bottom: none;
+}
+
+.info-table td{
+  font-weight: 100;
+  padding: 14px 22px;
+  vertical-align: middle;
+}
+.info-table td.label{
+  width: 38%;
+color: rgb(73, 139, 11);
+  font-weight: 100;
+  background: #fafafa;
+  font-size: 0.7em;
+}
+
+.info-table td.value{
+  color: var(--text);
+  font-weight: 100;
+   font-size: 0.7em;
+}
+
+
+.panel-footer{
+  padding: 14px 22px;
+  border-top: 1px solid var(--line);
+  font-size: 0.5em;
+  color: var(--muted);
+  background: #fafafa;
+  font-weight: 100;
+  margin-left: 30em;
+}
+@media (max-width: 640px){
+  .info-table td{
+    padding: 12px 14px;
+  }
+  .panel{
+    border-radius: 14px;
+  }
+  .panel-header{
+    padding: 14px 16px;
+  }
+}

@@ -1,0 +1,76 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,900;1,500;1,600&display=swap");
+.auth-container {
+  font-family: poppins;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("view.jpg") no-repeat center center;
+  background-size: 100% 100%; 
+}
+
+.auth-form {
+  background: transparent;
+  backdrop-filter: blur(40px);
+  padding: 25px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+.auth-form h2{
+    color: rgb(40, 199, 38);
+}
+.auth-form p {
+ font-size: 14px;
+}
+
+.input-group {
+  position: relative;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.input-group input {
+  width: 90%;
+  padding: 12px 10px;
+  border: none;
+  border-bottom: 1.2px solid #ffffff;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+}
+
+.input-group label {
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  color: #c0f6b0;
+  font-size: 15px;
+  transition: 0.2s ease;
+  pointer-events: none;
+  font-weight: 100;
+}
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: -5px;
+  font-size: 13px;
+  color: #6e7b66;
+}
+.auth-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #260ab3;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.auth-form button:hover {
+  background: #023c51;
+}
