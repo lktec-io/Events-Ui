@@ -9,7 +9,7 @@ function View() {
 
   const reading = async () => {
     try {
-      const response = await axios.get("http://185.194.216.14:7000/api/user/data");
+      const response = await axios.get("http://127.0.0.1:7000/api/user/data");
       setRead(response.data);
       console.log("Data fetched:", response.data);
     } catch (err) {
@@ -20,7 +20,7 @@ function View() {
   const deletes = async (id) => {
     setRead(prevRead => prevRead.filter(item => item.id !== id));
     try {
-      const response = await axios.delete(`http://185.194.216.14:7000/api/user/delete/${id}`);
+      const response = await axios.delete(`http://127.0.0.1:7000/api/user/delete/${id}`);
       console.log("Delete response:", response.status, response.data);
     } catch (err) {
       console.error("Delete failed:", err.response ? err.response.data : err.message);
