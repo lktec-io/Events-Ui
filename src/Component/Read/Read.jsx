@@ -40,6 +40,7 @@ reading();
       <div className="table-container">
         {/* <button className="btnm" onClick={reading}>See Events</button> */}
         <NavLink to="/dash" className="btn2">Back</NavLink>
+        <NavLink to="/create" className="btn2">Add New Event</NavLink>
         <div className="kulwa">
           <h2>⌚ Events List</h2>
           <table className="upcoming-table">  
