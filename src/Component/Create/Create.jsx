@@ -16,7 +16,7 @@ function Create() {
     setLoading(true); 
 
     try {
-      const response = await axios.post("http://127.0.0.1:7000/api/men/post", {
+      const response = await axios.post("http://185.194.216.146:81/api/men/post", {
         Name,
         Date,
         Location,

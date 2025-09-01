@@ -11,7 +11,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://127.0.0.1:7000/api/loged/login", {
+      const res = await axios.post("http://185.194.216.146:81/api/loged/login", {
         email,
         password,
       });
@@ -22,14 +22,11 @@ function Login() {
         navigate("/dash");
         console.log(res.data.user)
       }
-      
     } catch (error) {
       console.error(error);
-
       alert("Invalid email or password");
     }
   };
-
   return (
     <div className="auth-container">
       <form className="auth-form" onSubmit={handleSubmit}>
