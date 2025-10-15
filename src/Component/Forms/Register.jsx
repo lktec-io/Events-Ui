@@ -18,7 +18,7 @@ function Register() {
       return;
     }
     try {
-      await axios.post("http://185.194.216.146:81/api/loged/register", {
+      await axios.post("https://nardio.online/api/loged/register", {
         username,
         phone,
         email,

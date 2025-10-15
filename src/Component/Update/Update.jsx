@@ -13,7 +13,7 @@ function Update() {
 
 
   const fetchData = () => {
-    axios.get(`http://185.194.216.146:81/api/men/${id}`)
+    axios.get(`https://nardio.online/api/men/${id}`)
       .then(res => {
         setName(res.data.Name);
         setDate(res.data.Date);
@@ -37,7 +37,7 @@ function Update() {
     console.log(Name, Date, Location, Message);
 
     try {
-      await axios.put(`http://185.194.216.146:81/api/users/${id}`, {
+      await axios.put(`https://nardio.online/api/users/${id}`, {
         Name, Date, Location, Message
       });
       navigate("/read");

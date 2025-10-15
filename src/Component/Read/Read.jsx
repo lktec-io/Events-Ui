@@ -9,14 +9,13 @@ function View() {
 
   const reading = async () => {
     try {
-      const response = await axios.get("http://185.194.216.146:81/api/user/data");
+      const response = await axios.get("https://nardio.online/api/user/data");
       setRead(response.data);
       console.log("Data fetched:", response.data);
     } catch (err) {
       console.error("Error fetching data:", err);
     }
   };
-
   const deletes = async (id) => {
     setRead(prevRead => prevRead.filter(item => item.id !== id));
     try {

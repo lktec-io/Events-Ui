@@ -11,7 +11,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://185.194.216.146:81/api/loged/login", {
+      const res = await axios.post("https://nardio.online/api/loged/login", {
         email,
         password,
       });

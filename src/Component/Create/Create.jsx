@@ -16,7 +16,8 @@ function Create() {
     setLoading(true); 
 
     try {
-      const response = await axios.post("http://185.194.216.146:81/api/men/post", {
+      const response = await axios.post("https://nardio.online/api/men/post", {
+
         Name,
         Date,
         Location,
@@ -70,7 +71,6 @@ function Create() {
               onChange={(e) => setLocation(e.target.value)}
               required
             />
-
             <label>Event Detail</label>
             <textarea
               placeholder="About Event detail..."
@@ -78,7 +78,6 @@ function Create() {
               onChange={(e) => setMessage(e.target.value)}
               required
             ></textarea>
-
             <button className="btn1" type="submit" disabled={loading}>
               {loading ? "Creating..." : "Create"}
             </button>

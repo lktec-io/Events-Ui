@@ -45,7 +45,7 @@ function Dashboard() {
           </div>
 
           <div className="panel-footer">
-           All right reserved &copy; {new Date().getFullYear()} lktec.com
+           All right reserved &copy; {new Date().getFullYear()} Nardio
           </div>
         </div>
       </div>
