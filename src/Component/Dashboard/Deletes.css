@@ -12,7 +12,14 @@
   font-family: poppins;
 }
 
-*{ box-sizing: border-box; }
+*{ box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body{
+  width: 100%;
+  height: 100vh;
+}
 
 .dashboard {
   min-height: 100vh;

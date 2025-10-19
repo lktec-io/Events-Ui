@@ -1,29 +1,37 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,900;1,500;1,600&display=swap");
+body{
+  width: 100%;
+  height: 100vh;
+}
 .auth-container {
   font-family: poppins;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url("view.jpg") no-repeat center center;
+  background: url("welcome 2.jpg") no-repeat center center;
   background-size: 100% 100%; 
 }
 
 .auth-form {
   background: transparent;
-  backdrop-filter: blur(40px);
-  padding: 25px;
+  backdrop-filter: blur(30px);
+  padding: 90px;
   border-radius: 12px;
-  width: 320px;
+  /* width: 30%; */
+  /* height: 50vh; */
   text-align: center;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.30);
+  border: 1px solid rgba(87, 87, 87, 0.492);
 }
 .auth-form h2{
-    color: rgb(40, 199, 38);
+    color: rgb(85, 224, 43);
 }
 .auth-form p {
  font-size: 14px;
+ padding: 30px;
+
 }
 
 .input-group {
@@ -31,10 +39,13 @@
   margin: 20px 0;
   width: 100%;
 }
+.input-group value{
+background-color: blue;
+}
 
 .input-group input {
-  width: 90%;
-  padding: 12px 10px;
+  width: 95%;
+  padding: 12px 0px;
   border: none;
   border-bottom: 1.2px solid #ffffff;
   outline: none;
@@ -54,9 +65,12 @@
 }
 .input-group input:focus ~ label,
 .input-group input:valid ~ label {
-  top: -5px;
+  top: -10px;
   font-size: 13px;
-  color: #6e7b66;
+  color: #0ecfc9c4;
+}
+.input-group input::after ~ label{
+ display: none;
 }
 .auth-form button {
   width: 100%;
@@ -73,4 +87,13 @@
 
 .auth-form button:hover {
   background: #023c51;
+}
+
+@media (max-width: 768px){
+ .auth-container {
+  height: 100vh;
+  width: 100%;
+  padding: 12px;
+  background-position: center top;
+}
 }

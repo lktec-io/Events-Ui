@@ -30,6 +30,7 @@ function Login() {
   return (
     <div className="auth-container">
       <form className="auth-form" onSubmit={handleSubmit}>
+        <h2>Welcome back!</h2>
         <h2>Login</h2>
         <div className="input-group">
           <input
